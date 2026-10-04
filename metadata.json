@@ -1,0 +1,6 @@
+{
+  "name": "CBT EduUjian - Platform Ujian Online Sekolah",
+  "description": "Aplikasi ujian online (CBT) sekolah modern dengan sistem database mudah, manajemen bank soal, token ujian, timer otomatis, pencegah kecurangan, dan analisis nilai instan.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

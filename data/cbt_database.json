@@ -1,0 +1,560 @@
+{
+  "settings": {
+    "schoolName": "SMA Negeri 1 Prestasi Nusantara",
+    "academicYear": "2025/2026",
+    "semester": "Genap",
+    "examHeader": "PENILAIAN AKHIR SEMESTER (PAS) BERBASIS KOMPUTER",
+    "adminPin": "123456"
+  },
+  "admins": [
+    {
+      "id": "adm-001",
+      "username": "admin",
+      "name": "Administrator Utama",
+      "password": "123456",
+      "role": "Super Admin"
+    }
+  ],
+  "students": [
+    {
+      "id": "std-001",
+      "nis": "202601",
+      "name": "Ahmad Fauzi Rahman",
+      "classGrade": "10-IPA-1",
+      "gender": "L",
+      "password": "202601"
+    },
+    {
+      "id": "std-002",
+      "nis": "202602",
+      "name": "Siti Nurhaliza Putri",
+      "classGrade": "10-IPA-1",
+      "gender": "P",
+      "password": "202602"
+    },
+    {
+      "id": "std-003",
+      "nis": "202603",
+      "name": "Budi Santoso",
+      "classGrade": "10-IPA-2",
+      "gender": "L",
+      "password": "202603"
+    },
+    {
+      "id": "std-004",
+      "nis": "202604",
+      "name": "Dewi Sartika Ayu",
+      "classGrade": "10-IPS-1",
+      "gender": "P",
+      "password": "202604"
+    },
+    {
+      "id": "std-005",
+      "nis": "202605",
+      "name": "Rizky Pratama",
+      "classGrade": "10-IPS-2",
+      "gender": "L",
+      "password": "202605"
+    },
+    {
+      "id": "std-006",
+      "nis": "202606",
+      "name": "Zahra Anindya",
+      "classGrade": "10-IPA-2",
+      "gender": "P",
+      "password": "202606"
+    }
+  ],
+  "exams": [
+    {
+      "id": "exam-mtk-10",
+      "title": "Penilaian Akhir Semester - Matematika Wajib",
+      "subject": "Matematika",
+      "grade": "Kelas 10",
+      "durationMinutes": 45,
+      "token": "MTK2026",
+      "isActive": true,
+      "shuffleQuestions": true,
+      "showScoreToStudent": true,
+      "allowReviewAnswers": true,
+      "createdAt": "2026-10-04T05:12:53.576Z",
+      "questions": [
+        {
+          "id": "q-mtk-1",
+          "type": "multiple_choice",
+          "text": "Himpunan penyelesaian dari pertidaksamaan nilai mutlak |2x - 5| ≤ 7 adalah ...",
+          "options": [
+            {
+              "id": "A",
+              "text": "{x | -1 ≤ x ≤ 6, x ∈ R}"
+            },
+            {
+              "id": "B",
+              "text": "{x | -6 ≤ x ≤ 1, x ∈ R}"
+            },
+            {
+              "id": "C",
+              "text": "{x | x ≤ -1 atau x ≥ 6, x ∈ R}"
+            },
+            {
+              "id": "D",
+              "text": "{x | 1 ≤ x ≤ 6, x ∈ R}"
+            },
+            {
+              "id": "E",
+              "text": "{x | -1 ≤ x ≤ 5, x ∈ R}"
+            }
+          ],
+          "correctAnswer": "A",
+          "points": 15,
+          "explanation": "-7 ≤ 2x - 5 ≤ 7 => -2 ≤ 2x ≤ 12 => -1 ≤ x ≤ 6."
+        },
+        {
+          "id": "q-mtk-2",
+          "type": "multiple_choice",
+          "text": "Diketahui fungsi f(x) = 3x - 4 dan g(x) = 2x + p. Jika (f ∘ g)(2) = 20, maka nilai p adalah ...",
+          "options": [
+            {
+              "id": "A",
+              "text": "2"
+            },
+            {
+              "id": "B",
+              "text": "4"
+            },
+            {
+              "id": "C",
+              "text": "5"
+            },
+            {
+              "id": "D",
+              "text": "6"
+            },
+            {
+              "id": "E",
+              "text": "8"
+            }
+          ],
+          "correctAnswer": "B",
+          "points": 15,
+          "explanation": "g(2) = 2(2) + p = 4 + p. f(g(2)) = 3(4 + p) - 4 = 12 + 3p - 4 = 8 + 3p. 8 + 3p = 20 => 3p = 12 => p = 4."
+        },
+        {
+          "id": "q-mtk-3",
+          "type": "multiple_choice",
+          "text": "Sebuah segitiga ABC siku-siku di B. Jika panjang sisi AB = 8 cm dan sudut C = 30°, maka panjang sisi miring AC adalah ...",
+          "options": [
+            {
+              "id": "A",
+              "text": "12 cm"
+            },
+            {
+              "id": "B",
+              "text": "14 cm"
+            },
+            {
+              "id": "C",
+              "text": "16 cm"
+            },
+            {
+              "id": "D",
+              "text": "18 cm"
+            },
+            {
+              "id": "E",
+              "text": "20 cm"
+            }
+          ],
+          "correctAnswer": "C",
+          "points": 15,
+          "explanation": "sin C = AB / AC => sin 30° = 8 / AC => 1/2 = 8 / AC => AC = 16 cm."
+        },
+        {
+          "id": "q-mtk-4",
+          "type": "multiple_choice",
+          "text": "Dari 7 orang pengurus OSIS akan dipilih seorang ketua, sekretaris, dan bendahara. Banyaknya susunan pengurus yang dapat terbentuk adalah ...",
+          "options": [
+            {
+              "id": "A",
+              "text": "210 cara"
+            },
+            {
+              "id": "B",
+              "text": "105 cara"
+            },
+            {
+              "id": "C",
+              "text": "35 cara"
+            },
+            {
+              "id": "D",
+              "text": "420 cara"
+            },
+            {
+              "id": "E",
+              "text": "720 cara"
+            }
+          ],
+          "correctAnswer": "A",
+          "points": 15,
+          "explanation": "Permutasi P(7, 3) = 7! / (7 - 3)! = 7 x 6 x 5 = 210 cara."
+        },
+        {
+          "id": "q-mtk-5",
+          "type": "multiple_choice",
+          "text": "Rata-rata nilai ulangan matematika dari 39 siswa adalah 70. Jika nilai Budi digabungkan dengan kelompok tersebut, nilai rata-ratanya menjadi 70,5. Berapakah nilai matematika Budi?",
+          "options": [
+            {
+              "id": "A",
+              "text": "85"
+            },
+            {
+              "id": "B",
+              "text": "90"
+            },
+            {
+              "id": "C",
+              "text": "88"
+            },
+            {
+              "id": "D",
+              "text": "92"
+            },
+            {
+              "id": "E",
+              "text": "95"
+            }
+          ],
+          "correctAnswer": "B",
+          "points": 20,
+          "explanation": "Total nilai awal = 39 x 70 = 2730. Total nilai 40 siswa = 40 x 70,5 = 2820. Nilai Budi = 2820 - 2730 = 90."
+        },
+        {
+          "id": "q-mtk-6",
+          "type": "essay",
+          "text": "Jelaskan langkah-langkah untuk menentukan nilai determinan dari matriks 2x2: A = [ [3, 4], [2, 5] ] dan hitunglah hasil akhirnya!",
+          "options": [],
+          "correctAnswer": "determinan = (3*5) - (4*2) = 15 - 8 = 7",
+          "points": 20,
+          "explanation": "Rumus determinan matriks [ [a, b], [c, d] ] adalah ad - bc. Maka (3 x 5) - (4 x 2) = 15 - 8 = 7."
+        }
+      ]
+    },
+    {
+      "id": "exam-bindo-10",
+      "title": "Asesmen Sumatif - Bahasa Indonesia",
+      "subject": "Bahasa Indonesia",
+      "grade": "Kelas 10",
+      "durationMinutes": 30,
+      "token": "BINDO26",
+      "isActive": true,
+      "shuffleQuestions": false,
+      "showScoreToStudent": true,
+      "allowReviewAnswers": true,
+      "createdAt": "2026-10-04T05:12:53.578Z",
+      "questions": [
+        {
+          "id": "q-bin-1",
+          "type": "multiple_choice",
+          "text": "Bacalah kutipan teks berikut:\n\n'Pemanasan global telah memicu anomali cuaca ekstrem di berbagai belahan bumi. Kenaikan suhu rata-rata permukaan laut menyebabkan intensitas badai tropis semakin tidak menentu. Hal ini berdampak langsung terhadap hasil panen pertanian dan ketahanan pangan nasional.'\n\nIde pokok paragraf di atas adalah ...",
+          "options": [
+            {
+              "id": "A",
+              "text": "Ketahanan pangan nasional yang terganggu akibat anomali iklim"
+            },
+            {
+              "id": "B",
+              "text": "Dampak pemanasan global yang memicu anomali cuaca ekstrem"
+            },
+            {
+              "id": "C",
+              "text": "Penyebab kenaikan suhu permukaan air laut di dunia"
+            },
+            {
+              "id": "D",
+              "text": "Intensitas badai tropis di perairan khatulistiwa"
+            },
+            {
+              "id": "E",
+              "text": "Kegagalan panen para petani lokal saat musim penghujan"
+            }
+          ],
+          "correctAnswer": "B",
+          "points": 25,
+          "explanation": "Kalimat utama ada di awal paragraf (deduktif): Pemanasan global memicu cuaca ekstrem yang dijelaskan kalimat-kalimat berikutnya."
+        },
+        {
+          "id": "q-bin-2",
+          "type": "multiple_choice",
+          "text": "Penulisan kata serapan dan tanda baca yang tepat sesuai dengan PUEBI/EYD Edisi V terdapat pada kalimat ...",
+          "options": [
+            {
+              "id": "A",
+              "text": "Pihak managemen telah menyusun analisa dampak lingkungan hidup."
+            },
+            {
+              "id": "B",
+              "text": "Pihak manajemen telah menyusun analisis dampak lingkungan hidup."
+            },
+            {
+              "id": "C",
+              "text": "Pihak manajement telah menyusun analisa dampak lingkungan hidup."
+            },
+            {
+              "id": "D",
+              "text": "Pihak menejemen telah menyusun analisis dampak lingkungan hidup."
+            },
+            {
+              "id": "E",
+              "text": "Pihak managemen telah menyusun analisist dampak lingkungan hidup."
+            }
+          ],
+          "correctAnswer": "B",
+          "points": 25,
+          "explanation": "Bentuk baku serapan bahasa Indonesia adalah 'manajemen' dan 'analisis'."
+        },
+        {
+          "id": "q-bin-3",
+          "type": "multiple_choice",
+          "text": "'Rembulan tersenyum ramah menyapa musafir yang tengah berjalan di keheningan malam.'\nMajas yang digunakan pada kalimat tersebut adalah ...",
+          "options": [
+            {
+              "id": "A",
+              "text": "Metafora"
+            },
+            {
+              "id": "B",
+              "text": "Hiperbola"
+            },
+            {
+              "id": "C",
+              "text": "Personifikasi"
+            },
+            {
+              "id": "D",
+              "text": "Litotes"
+            },
+            {
+              "id": "E",
+              "text": "Simile"
+            }
+          ],
+          "correctAnswer": "C",
+          "points": 25,
+          "explanation": "Personifikasi mengumpamakan benda mati (rembulan) seolah-olah memiliki sifat manusia (tersenyum ramah menyapa)."
+        },
+        {
+          "id": "q-bin-4",
+          "type": "essay",
+          "text": "Sebutkan dan jelaskan secara singkat struktur teks Laporan Hasil Observasi (LHO) yang baik dan benar!",
+          "options": [],
+          "correctAnswer": "Pernyataan umum, Deskripsi bagian, Deskripsi manfaat",
+          "points": 25,
+          "explanation": "Struktur teks LHO: 1. Pernyataan umum/definisi umum, 2. Deskripsi bagian, 3. Deskripsi manfaat/kesimpulan."
+        }
+      ]
+    },
+    {
+      "id": "exam-ipa-10",
+      "title": "Ujian Harian Terpadu - IPA & Sains",
+      "subject": "Ilmu Pengetahuan Alam",
+      "grade": "Kelas 10",
+      "durationMinutes": 30,
+      "token": "IPA2026",
+      "isActive": true,
+      "shuffleQuestions": true,
+      "showScoreToStudent": true,
+      "allowReviewAnswers": true,
+      "createdAt": "2026-10-04T05:12:53.578Z",
+      "questions": [
+        {
+          "id": "q-ipa-1",
+          "type": "multiple_choice",
+          "text": "Organel sel yang berfungsi sebagai 'pabrik energi' (tempat respirasi seluler menghasilkan ATP) adalah ...",
+          "options": [
+            {
+              "id": "A",
+              "text": "Ribosom"
+            },
+            {
+              "id": "B",
+              "text": "Mitokondria"
+            },
+            {
+              "id": "C",
+              "text": "Badan Golgi"
+            },
+            {
+              "id": "D",
+              "text": "Retikulum Endoplasma"
+            },
+            {
+              "id": "E",
+              "text": "Lisosom"
+            }
+          ],
+          "correctAnswer": "B",
+          "points": 25,
+          "explanation": "Mitokondria dikenal sebagai powerhouse of cell karena menghasilkan energi ATP melalui respirasi sel."
+        },
+        {
+          "id": "q-ipa-2",
+          "type": "multiple_choice",
+          "text": "Sebuah mobil bermassa 1.000 kg bergerak dengan percepatan 2,5 m/s². Besar gaya dorong mesin mobil sesuai Hukum II Newton adalah ...",
+          "options": [
+            {
+              "id": "A",
+              "text": "400 N"
+            },
+            {
+              "id": "B",
+              "text": "2.500 N"
+            },
+            {
+              "id": "C",
+              "text": "5.000 N"
+            },
+            {
+              "id": "D",
+              "text": "250 N"
+            },
+            {
+              "id": "E",
+              "text": "1.250 N"
+            }
+          ],
+          "correctAnswer": "B",
+          "points": 25,
+          "explanation": "F = m x a = 1000 kg x 2,5 m/s² = 2.500 Newton."
+        },
+        {
+          "id": "q-ipa-3",
+          "type": "multiple_choice",
+          "text": "Dalam suatu ekosistem sawah: Padi -> Belalang -> Katak -> Ular -> Elang. Peran katak dalam rantai makanan tersebut adalah sebagai ...",
+          "options": [
+            {
+              "id": "A",
+              "text": "Produsen"
+            },
+            {
+              "id": "B",
+              "text": "Konsumen Primer (Tingkat I)"
+            },
+            {
+              "id": "C",
+              "text": "Konsumen Sekunder (Tingkat II)"
+            },
+            {
+              "id": "D",
+              "text": "Konsumen Tersier (Tingkat III)"
+            },
+            {
+              "id": "E",
+              "text": "Pengurai (Dekomposer)"
+            }
+          ],
+          "correctAnswer": "C",
+          "points": 25,
+          "explanation": "Padi (produsen) -> Belalang (konsumen I) -> Katak (konsumen II)."
+        },
+        {
+          "id": "q-ipa-4",
+          "type": "multiple_choice",
+          "text": "Zat yang berfungsi sebagai katalisator biologis yang mempercepat laju reaksi kimia dalam tubuh tanpa ikut bereaksi adalah ...",
+          "options": [
+            {
+              "id": "A",
+              "text": "Hormon"
+            },
+            {
+              "id": "B",
+              "text": "Enzim"
+            },
+            {
+              "id": "C",
+              "text": "Vitamin"
+            },
+            {
+              "id": "D",
+              "text": "Mineral"
+            },
+            {
+              "id": "E",
+              "text": "Lipid"
+            }
+          ],
+          "correctAnswer": "B",
+          "points": 25,
+          "explanation": "Enzim adalah biokatalisator yang mempercepat reaksi metabolisme dalam tubuh."
+        }
+      ]
+    }
+  ],
+  "submissions": [
+    {
+      "id": "sub-001",
+      "examId": "exam-mtk-10",
+      "examTitle": "Penilaian Akhir Semester - Matematika Wajib",
+      "subject": "Matematika",
+      "studentId": "std-001",
+      "studentNis": "202601",
+      "studentName": "Ahmad Fauzi Rahman",
+      "studentClass": "10-IPA-1",
+      "answers": {
+        "q-mtk-1": "A",
+        "q-mtk-2": "B",
+        "q-mtk-3": "C",
+        "q-mtk-4": "A",
+        "q-mtk-5": "B",
+        "q-mtk-6": "Determinannya adalah 3 x 5 dikurangi 4 x 2 yaitu 15 - 8 = 7."
+      },
+      "doubtful": {},
+      "tabSwitchViolations": 0,
+      "startedAt": "2026-10-04T04:12:53.578Z",
+      "submittedAt": "2026-10-04T04:52:53.578Z",
+      "score": 100,
+      "maxScore": 100,
+      "percentage": 100,
+      "essayGrading": {
+        "q-mtk-6": {
+          "score": 20,
+          "note": "Langkah perhitungan sangat jelas dan tepat."
+        }
+      }
+    },
+    {
+      "id": "sub-002",
+      "examId": "exam-mtk-10",
+      "examTitle": "Penilaian Akhir Semester - Matematika Wajib",
+      "subject": "Matematika",
+      "studentId": "std-002",
+      "studentNis": "202602",
+      "studentName": "Siti Nurhaliza Putri",
+      "studentClass": "10-IPA-1",
+      "answers": {
+        "q-mtk-1": "A",
+        "q-mtk-2": "B",
+        "q-mtk-3": "A",
+        "q-mtk-4": "A",
+        "q-mtk-5": "B",
+        "q-mtk-6": "Hasil determinan = 15 - 8 = 7"
+      },
+      "doubtful": {
+        "q-mtk-3": true
+      },
+      "tabSwitchViolations": 1,
+      "startedAt": "2026-10-04T03:12:53.578Z",
+      "submittedAt": "2026-10-04T03:52:53.578Z",
+      "score": 85,
+      "maxScore": 100,
+      "percentage": 85,
+      "essayGrading": {
+        "q-mtk-6": {
+          "score": 20,
+          "note": "Jawaban benar."
+        }
+      }
+    }
+  ],
+  "lastUpdated": "2026-10-04T05:12:53.578Z"
+}
